@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		10DA526BB431818412D1E817 /* Pods_movieguideUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EE4978D1110AC3CC8D7FDF /* Pods_movieguideUITests.framework */; };
+		5506E1941D7DF17F002798C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5535EEFE1D78ED3F00E53A53 /* Assets.xcassets */; };
 		552D6D501D7CC079003FFC53 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552D6D4F1D7CC02E003FFC53 /* Genre.swift */; };
 		552D6D511D7CC3E0003FFC53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5535EEFB1D78ED2000E53A53 /* Main.storyboard */; };
 		5535EEC61D78E3E800E53A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5535EEC51D78E3E800E53A53 /* AppDelegate.swift */; };
@@ -345,6 +346,7 @@
 				5535EEC01D78E3E800E53A53 /* Resources */,
 				530DA512593EA97036709E84 /* [CP] Embed Pods Frameworks */,
 				3EB49E7A116E38C8F3966001 /* [CP] Copy Pods Resources */,
+				5506E1931D7DEC89002798C7 /* Crashlytics Phase */,
 			);
 			buildRules = (
 			);
@@ -444,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5506E1941D7DF17F002798C7 /* Assets.xcassets in Resources */,
 				552D6D511D7CC3E0003FFC53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +527,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-movieguide/Pods-movieguide-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5506E1931D7DEC89002798C7 /* Crashlytics Phase */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Crashlytics Phase";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" fd352ed76f01deb9b11fb25ec81afa881902ea7f 7c647e77e6ca00da3ccc424d92f1178bdd9a3400b16c1e9a20147ee24d11ec32";
 		};
 		5BD956E6C61D02AB13B06A3D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
