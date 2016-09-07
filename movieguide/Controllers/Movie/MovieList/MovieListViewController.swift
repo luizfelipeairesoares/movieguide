@@ -33,6 +33,7 @@ class MovieListViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        self.viewModel.assignController(self)
         self.title = "Upcoming"
     }
     
